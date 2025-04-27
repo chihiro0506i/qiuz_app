@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>クイズアプリ</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1>クイズアプリ</h1>
+        <button id="start-button">スタート</button>
+
+        <div id="quiz-container" style="display:none;">
+            <div id="question"></div>
+            <div id="choices"></div>
+            <button id="next-button" style="display:none;">次へ</button>
+        </div>
+
+        <div id="result-container" style="display:none;">
+            <h2>結果</h2>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
