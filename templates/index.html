@@ -8,22 +8,28 @@
 </head>
 
 <body>
-    <div id="main">
-        <h1>クイズアプリ</h1>
-        <button id="start-button">スタート</button>
+    <h1>クイズアプリ</h1>
 
-        <div id="quiz-container" style="display:none;">
-            <div id="question"></div>
-            <div id="choices"></div>
-            <button id="next-button" style="display:none;">次へ</button>
-        </div>
+    <!-- スタートボタン -->
+    <button id="start-btn">スタート</button>
 
-        <div id="result-container" style="display:none;">
-            <h2>結果</h2>
-            <p id="score"></p>
+    <!-- クイズ問題表示エリア -->
+    <div id="question-container" class="hide">
+        <h2 id="question">ここに問題文が表示されます</h2>
+        <div id="choices">
+            <button class="choice-btn"></button>
+            <button class="choice-btn"></button>
+            <button class="choice-btn"></button>
+            <button class="choice-btn"></button>
         </div>
     </div>
 
+    <!-- 結果表示エリア -->
+    <div id="result-container" class="hide">
+        <h2 id="score">スコア表示</h2>
+    </div>
+
+    <!-- JavaScriptの読み込みはbodyの一番下！ -->
     <script src="/static/script.js"></script>
 </body>
 
